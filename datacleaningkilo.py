@@ -25,6 +25,9 @@ df.columns = df.columns.str.replace(' ', '_')
 # Apply the function to the 'Job Title' column
 df['Job_Title'] = df['Job_Title'].apply(remove_special_characters)
 
+# Apply the function to the 'Description' column
+df['Description'] = df['Description'].apply(remove_special_characters)
+
 # Fill empty fields with 'Unknown'
 df = fill_empty_fields(df)
 

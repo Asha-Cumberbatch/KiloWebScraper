@@ -29,7 +29,7 @@ df['Job_Title'] = df['Job_Title'].apply(remove_special_characters)
 df['Description'] = df['Description'].apply(remove_special_characters)
 
 # Fill empty fields with 'Unknown'
-df = fill_empty_fields(df)
+#df = fill_empty_fields(df)
 
 # Step 2: Remove duplicate rows
 df.drop_duplicates(inplace=True)
